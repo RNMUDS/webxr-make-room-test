@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(/usr/local/bin/git init)",
+      "Bash(ls:*)",
+      "Bash(gh repo create:*)",
+      "Bash(git init:*)",
+      "Bash(openssl req:*)"
+    ],
+    "deny": []
+  }
+}

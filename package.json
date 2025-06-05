@@ -1,0 +1,12 @@
+{
+  "name": "aframe-classroom-webxr",
+  "version": "1.0.0",
+  "description": "Modern university classroom in WebXR using A-Frame",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
