@@ -21,21 +21,23 @@
     
     <!-- Room Structure -->
     <!-- Floor -->
-    <a-plane position="0 0 0" rotation="-90 0 0" width="20" height="15" material="color: #D3C4B8; roughness: 0.6"></a-plane>
+    <a-plane position="0 0 0" rotation="-90 0 0" width="40" height="30" material="color: #D3C4B8; roughness: 0.6"></a-plane>
     
     <!-- Walls -->
-    <a-plane position="0 5 -7.5" width="20" height="10" mixin="modern-wall"></a-plane>
-    <a-plane position="0 5 7.5" rotation="0 180 0" width="20" height="10" mixin="modern-wall"></a-plane>
-    <a-plane position="-10 5 0" rotation="0 90 0" width="15" height="10" mixin="modern-wall"></a-plane>
-    <a-plane position="10 5 0" rotation="0 -90 0" width="15" height="10" material="color: #E8F4F8; roughness: 0.5">
+    <a-plane position="0 5 -15" width="40" height="10" mixin="modern-wall"></a-plane>
+    <a-plane position="0 5 15" rotation="0 180 0" width="40" height="10" mixin="modern-wall"></a-plane>
+    <a-plane position="-20 5 0" rotation="0 90 0" width="30" height="10" mixin="modern-wall"></a-plane>
+    <a-plane position="20 5 0" rotation="0 -90 0" width="30" height="10" material="color: #E8F4F8; roughness: 0.5">
       <!-- Windows -->
-      <a-plane position="-3 0 0.01" width="2" height="3" material="color: #87CEEB; opacity: 0.3"></a-plane>
-      <a-plane position="0 0 0.01" width="2" height="3" material="color: #87CEEB; opacity: 0.3"></a-plane>
-      <a-plane position="3 0 0.01" width="2" height="3" material="color: #87CEEB; opacity: 0.3"></a-plane>
+      <a-plane position="-8 0 0.01" width="3" height="4" material="color: #87CEEB; opacity: 0.3"></a-plane>
+      <a-plane position="-4 0 0.01" width="3" height="4" material="color: #87CEEB; opacity: 0.3"></a-plane>
+      <a-plane position="0 0 0.01" width="3" height="4" material="color: #87CEEB; opacity: 0.3"></a-plane>
+      <a-plane position="4 0 0.01" width="3" height="4" material="color: #87CEEB; opacity: 0.3"></a-plane>
+      <a-plane position="8 0 0.01" width="3" height="4" material="color: #87CEEB; opacity: 0.3"></a-plane>
     </a-plane>
     
     <!-- Ceiling -->
-    <a-plane position="0 10 0" rotation="90 0 0" width="20" height="15" material="color: #FFFFFF; roughness: 0.3"></a-plane>
+    <a-plane position="0 10 0" rotation="90 0 0" width="40" height="30" material="color: #FFFFFF; roughness: 0.3"></a-plane>
     
     <!-- Lighting -->
     <a-light type="ambient" color="#808080"></a-light>
@@ -49,60 +51,154 @@
     <!-- Modern Furniture Layout -->
     
     <!-- Front Area - Presentation Space -->
-    <a-box position="0 0.5 -6.5" width="8" height="1" depth="0.5" material="color: #2C3E50; roughness: 0.6"></a-box>
-    <a-plane position="0 3 -7" width="6" height="3" material="color: #1A1A1A; roughness: 0.1"></a-plane>
+    <a-box position="0 0.5 -13" width="16" height="1" depth="0.5" material="color: #2C3E50; roughness: 0.6"></a-box>
+    <a-plane position="0 3 -14" width="12" height="5" material="color: #1A1A1A; roughness: 0.1"></a-plane>
     
-    <!-- Sofas and Lounge Seating (10 seats) -->
-    <!-- Row 1 - Sofas -->
-    <a-entity position="-6 0 -3">
+    <!-- Sofas and Lounge Seating - Front Section -->
+    <!-- Row 1 - Front Sofas -->
+    <a-entity position="-15 0 -8">
       <a-box width="3" height="0.8" depth="1.5" material="color: #5C6BC0; roughness: 0.8"></a-box>
       <a-box position="0 0.6 -0.5" width="3" height="0.8" depth="0.3" material="color: #7986CB; roughness: 0.8"></a-box>
     </a-entity>
-    
-    <a-entity position="6 0 -3">
-      <a-box width="3" height="0.8" depth="1.5" material="color: #5C6BC0; roughness: 0.8"></a-box>
-      <a-box position="0 0.6 -0.5" width="3" height="0.8" depth="0.3" material="color: #7986CB; roughness: 0.8"></a-box>
+    <a-entity position="-9 0 -8">
+      <a-box width="3" height="0.8" depth="1.5" material="color: #E91E63; roughness: 0.8"></a-box>
+      <a-box position="0 0.6 -0.5" width="3" height="0.8" depth="0.3" material="color: #F06292; roughness: 0.8"></a-box>
+    </a-entity>
+    <a-entity position="9 0 -8">
+      <a-box width="3" height="0.8" depth="1.5" material="color: #FF9800; roughness: 0.8"></a-box>
+      <a-box position="0 0.6 -0.5" width="3" height="0.8" depth="0.3" material="color: #FFB74D; roughness: 0.8"></a-box>
+    </a-entity>
+    <a-entity position="15 0 -8">
+      <a-box width="3" height="0.8" depth="1.5" material="color: #4CAF50; roughness: 0.8"></a-box>
+      <a-box position="0 0.6 -0.5" width="3" height="0.8" depth="0.3" material="color: #66BB6A; roughness: 0.8"></a-box>
     </a-entity>
     
-    <!-- Modern Chairs (20 seats) -->
-    <!-- Row 2 -->
-    <a-entity id="chair-1" position="-7 0 0">
+    <!-- Row 2 - Side Sofas -->
+    <a-entity position="-18 0 -2">
+      <a-box width="3" height="0.8" depth="1.5" material="color: #9C27B0; roughness: 0.8"></a-box>
+      <a-box position="0 0.6 -0.5" width="3" height="0.8" depth="0.3" material="color: #BA68C8; roughness: 0.8"></a-box>
+    </a-entity>
+    <a-entity position="-18 0 4">
+      <a-box width="3" height="0.8" depth="1.5" material="color: #2196F3; roughness: 0.8"></a-box>
+      <a-box position="0 0.6 -0.5" width="3" height="0.8" depth="0.3" material="color: #64B5F6; roughness: 0.8"></a-box>
+    </a-entity>
+    <a-entity position="18 0 -2">
+      <a-box width="3" height="0.8" depth="1.5" material="color: #FF5722; roughness: 0.8"></a-box>
+      <a-box position="0 0.6 -0.5" width="3" height="0.8" depth="0.3" material="color: #FF8A65; roughness: 0.8"></a-box>
+    </a-entity>
+    <a-entity position="18 0 4">
+      <a-box width="3" height="0.8" depth="1.5" material="color: #607D8B; roughness: 0.8"></a-box>
+      <a-box position="0 0.6 -0.5" width="3" height="0.8" depth="0.3" material="color: #78909C; roughness: 0.8"></a-box>
+    </a-entity>
+    
+    <!-- Modern Chairs (32 seats) - Center Section -->
+    <!-- Row 1 - Center Chairs -->
+    <a-entity position="-12 0 -2">
       <a-cylinder radius="0.4" height="0.6" material="color: #FF7043; roughness: 0.7"></a-cylinder>
       <a-cylinder position="0 0.5 -0.2" radius="0.4" height="0.1" rotation="-20 0 0" material="color: #FF8A65; roughness: 0.7"></a-cylinder>
     </a-entity>
-    
-    <a-entity id="chair-2" position="-5 0 0">
+    <a-entity position="-9 0 -2">
       <a-cylinder radius="0.4" height="0.6" material="color: #26A69A; roughness: 0.7"></a-cylinder>
       <a-cylinder position="0 0.5 -0.2" radius="0.4" height="0.1" rotation="-20 0 0" material="color: #4DB6AC; roughness: 0.7"></a-cylinder>
     </a-entity>
-    
-    <a-entity id="chair-3" position="-3 0 0">
+    <a-entity position="-6 0 -2">
       <a-cylinder radius="0.4" height="0.6" material="color: #FFA726; roughness: 0.7"></a-cylinder>
       <a-cylinder position="0 0.5 -0.2" radius="0.4" height="0.1" rotation="-20 0 0" material="color: #FFB74D; roughness: 0.7"></a-cylinder>
     </a-entity>
-    
-    <a-entity id="chair-4" position="-1 0 0">
+    <a-entity position="-3 0 -2">
       <a-cylinder radius="0.4" height="0.6" material="color: #AB47BC; roughness: 0.7"></a-cylinder>
       <a-cylinder position="0 0.5 -0.2" radius="0.4" height="0.1" rotation="-20 0 0" material="color: #BA68C8; roughness: 0.7"></a-cylinder>
     </a-entity>
+    <a-entity position="0 0 -2">
+      <a-cylinder radius="0.4" height="0.6" material="color: #2196F3; roughness: 0.7"></a-cylinder>
+      <a-cylinder position="0 0.5 -0.2" radius="0.4" height="0.1" rotation="-20 0 0" material="color: #64B5F6; roughness: 0.7"></a-cylinder>
+    </a-entity>
+    <a-entity position="3 0 -2">
+      <a-cylinder radius="0.4" height="0.6" material="color: #4CAF50; roughness: 0.7"></a-cylinder>
+      <a-cylinder position="0 0.5 -0.2" radius="0.4" height="0.1" rotation="-20 0 0" material="color: #66BB6A; roughness: 0.7"></a-cylinder>
+    </a-entity>
+    <a-entity position="6 0 -2">
+      <a-cylinder radius="0.4" height="0.6" material="color: #FF5722; roughness: 0.7"></a-cylinder>
+      <a-cylinder position="0 0.5 -0.2" radius="0.4" height="0.1" rotation="-20 0 0" material="color: #FF8A65; roughness: 0.7"></a-cylinder>
+    </a-entity>
+    <a-entity position="9 0 -2">
+      <a-cylinder radius="0.4" height="0.6" material="color: #9C27B0; roughness: 0.7"></a-cylinder>
+      <a-cylinder position="0 0.5 -0.2" radius="0.4" height="0.1" rotation="-20 0 0" material="color: #BA68C8; roughness: 0.7"></a-cylinder>
+    </a-entity>
+    <a-entity position="12 0 -2">
+      <a-cylinder radius="0.4" height="0.6" material="color: #795548; roughness: 0.7"></a-cylinder>
+      <a-cylinder position="0 0.5 -0.2" radius="0.4" height="0.1" rotation="-20 0 0" material="color: #A1887F; roughness: 0.7"></a-cylinder>
+    </a-entity>
     
-    <a-entity id="chair-5" position="1 0 0">
+    <!-- Row 2 - Center Chairs -->
+    <a-entity position="-12 0 1">
+      <a-cylinder radius="0.4" height="0.6" material="color: #E91E63; roughness: 0.7"></a-cylinder>
+      <a-cylinder position="0 0.5 -0.2" radius="0.4" height="0.1" rotation="-20 0 0" material="color: #F06292; roughness: 0.7"></a-cylinder>
+    </a-entity>
+    <a-entity position="-9 0 1">
+      <a-cylinder radius="0.4" height="0.6" material="color: #00BCD4; roughness: 0.7"></a-cylinder>
+      <a-cylinder position="0 0.5 -0.2" radius="0.4" height="0.1" rotation="-20 0 0" material="color: #4DD0E1; roughness: 0.7"></a-cylinder>
+    </a-entity>
+    <a-entity position="-6 0 1">
+      <a-cylinder radius="0.4" height="0.6" material="color: #8BC34A; roughness: 0.7"></a-cylinder>
+      <a-cylinder position="0 0.5 -0.2" radius="0.4" height="0.1" rotation="-20 0 0" material="color: #AED581; roughness: 0.7"></a-cylinder>
+    </a-entity>
+    <a-entity position="-3 0 1">
+      <a-cylinder radius="0.4" height="0.6" material="color: #FFEB3B; roughness: 0.7"></a-cylinder>
+      <a-cylinder position="0 0.5 -0.2" radius="0.4" height="0.1" rotation="-20 0 0" material="color: #FFF176; roughness: 0.7"></a-cylinder>
+    </a-entity>
+    <a-entity position="0 0 1">
+      <a-cylinder radius="0.4" height="0.6" material="color: #FF9800; roughness: 0.7"></a-cylinder>
+      <a-cylinder position="0 0.5 -0.2" radius="0.4" height="0.1" rotation="-20 0 0" material="color: #FFB74D; roughness: 0.7"></a-cylinder>
+    </a-entity>
+    <a-entity position="3 0 1">
+      <a-cylinder radius="0.4" height="0.6" material="color: #607D8B; roughness: 0.7"></a-cylinder>
+      <a-cylinder position="0 0.5 -0.2" radius="0.4" height="0.1" rotation="-20 0 0" material="color: #78909C; roughness: 0.7"></a-cylinder>
+    </a-entity>
+    <a-entity position="6 0 1">
+      <a-cylinder radius="0.4" height="0.6" material="color: #3F51B5; roughness: 0.7"></a-cylinder>
+      <a-cylinder position="0 0.5 -0.2" radius="0.4" height="0.1" rotation="-20 0 0" material="color: #7986CB; roughness: 0.7"></a-cylinder>
+    </a-entity>
+    <a-entity position="9 0 1">
+      <a-cylinder radius="0.4" height="0.6" material="color: #009688; roughness: 0.7"></a-cylinder>
+      <a-cylinder position="0 0.5 -0.2" radius="0.4" height="0.1" rotation="-20 0 0" material="color: #4DB6AC; roughness: 0.7"></a-cylinder>
+    </a-entity>
+    <a-entity position="12 0 1">
+      <a-cylinder radius="0.4" height="0.6" material="color: #CDDC39; roughness: 0.7"></a-cylinder>
+      <a-cylinder position="0 0.5 -0.2" radius="0.4" height="0.1" rotation="-20 0 0" material="color: #DCE775; roughness: 0.7"></a-cylinder>
+    </a-entity>
+    
+    <!-- Row 3 - Side Area Chairs -->
+    <a-entity position="-15 0 7">
       <a-cylinder radius="0.4" height="0.6" material="color: #FF7043; roughness: 0.7"></a-cylinder>
       <a-cylinder position="0 0.5 -0.2" radius="0.4" height="0.1" rotation="-20 0 0" material="color: #FF8A65; roughness: 0.7"></a-cylinder>
     </a-entity>
-    
-    <a-entity id="chair-6" position="3 0 0">
+    <a-entity position="-12 0 7">
       <a-cylinder radius="0.4" height="0.6" material="color: #26A69A; roughness: 0.7"></a-cylinder>
       <a-cylinder position="0 0.5 -0.2" radius="0.4" height="0.1" rotation="-20 0 0" material="color: #4DB6AC; roughness: 0.7"></a-cylinder>
     </a-entity>
-    
-    <a-entity id="chair-7" position="5 0 0">
+    <a-entity position="-9 0 7">
       <a-cylinder radius="0.4" height="0.6" material="color: #FFA726; roughness: 0.7"></a-cylinder>
       <a-cylinder position="0 0.5 -0.2" radius="0.4" height="0.1" rotation="-20 0 0" material="color: #FFB74D; roughness: 0.7"></a-cylinder>
     </a-entity>
-    
-    <a-entity id="chair-8" position="7 0 0">
+    <a-entity position="-6 0 7">
       <a-cylinder radius="0.4" height="0.6" material="color: #AB47BC; roughness: 0.7"></a-cylinder>
+      <a-cylinder position="0 0.5 -0.2" radius="0.4" height="0.1" rotation="-20 0 0" material="color: #BA68C8; roughness: 0.7"></a-cylinder>
+    </a-entity>
+    <a-entity position="6 0 7">
+      <a-cylinder radius="0.4" height="0.6" material="color: #2196F3; roughness: 0.7"></a-cylinder>
+      <a-cylinder position="0 0.5 -0.2" radius="0.4" height="0.1" rotation="-20 0 0" material="color: #64B5F6; roughness: 0.7"></a-cylinder>
+    </a-entity>
+    <a-entity position="9 0 7">
+      <a-cylinder radius="0.4" height="0.6" material="color: #4CAF50; roughness: 0.7"></a-cylinder>
+      <a-cylinder position="0 0.5 -0.2" radius="0.4" height="0.1" rotation="-20 0 0" material="color: #66BB6A; roughness: 0.7"></a-cylinder>
+    </a-entity>
+    <a-entity position="12 0 7">
+      <a-cylinder radius="0.4" height="0.6" material="color: #FF5722; roughness: 0.7"></a-cylinder>
+      <a-cylinder position="0 0.5 -0.2" radius="0.4" height="0.1" rotation="-20 0 0" material="color: #FF8A65; roughness: 0.7"></a-cylinder>
+    </a-entity>
+    <a-entity position="15 0 7">
+      <a-cylinder radius="0.4" height="0.6" material="color: #9C27B0; roughness: 0.7"></a-cylinder>
       <a-cylinder position="0 0.5 -0.2" radius="0.4" height="0.1" rotation="-20 0 0" material="color: #BA68C8; roughness: 0.7"></a-cylinder>
     </a-entity>
     
@@ -149,8 +245,26 @@
       <a-cone position="0 0.6 0" radius-bottom="0.5" radius-top="0.1" height="1" material="color: #4CAF50; roughness: 0.8"></a-cone>
     </a-entity>
     
-    <!-- Bookshelf -->
-    <a-box position="-9 2 0" width="0.5" height="4" depth="2" material="color: #6D4C41; roughness: 0.8">
+    <!-- Bookshelves - Wall Mounted -->
+    <a-box position="-19.75 2 0" width="0.5" height="4" depth="2" material="color: #6D4C41; roughness: 0.8">
+      <a-box position="0 1.5 0" width="0.45" height="0.05" depth="1.9" material="color: #5D4037"></a-box>
+      <a-box position="0 0.5 0" width="0.45" height="0.05" depth="1.9" material="color: #5D4037"></a-box>
+      <a-box position="0 -0.5 0" width="0.45" height="0.05" depth="1.9" material="color: #5D4037"></a-box>
+      <a-box position="0 -1.5 0" width="0.45" height="0.05" depth="1.9" material="color: #5D4037"></a-box>
+    </a-box>
+    <a-box position="-19.75 2 -5" width="0.5" height="4" depth="2" material="color: #6D4C41; roughness: 0.8">
+      <a-box position="0 1.5 0" width="0.45" height="0.05" depth="1.9" material="color: #5D4037"></a-box>
+      <a-box position="0 0.5 0" width="0.45" height="0.05" depth="1.9" material="color: #5D4037"></a-box>
+      <a-box position="0 -0.5 0" width="0.45" height="0.05" depth="1.9" material="color: #5D4037"></a-box>
+      <a-box position="0 -1.5 0" width="0.45" height="0.05" depth="1.9" material="color: #5D4037"></a-box>
+    </a-box>
+    <a-box position="-19.75 2 5" width="0.5" height="4" depth="2" material="color: #6D4C41; roughness: 0.8">
+      <a-box position="0 1.5 0" width="0.45" height="0.05" depth="1.9" material="color: #5D4037"></a-box>
+      <a-box position="0 0.5 0" width="0.45" height="0.05" depth="1.9" material="color: #5D4037"></a-box>
+      <a-box position="0 -0.5 0" width="0.45" height="0.05" depth="1.9" material="color: #5D4037"></a-box>
+      <a-box position="0 -1.5 0" width="0.45" height="0.05" depth="1.9" material="color: #5D4037"></a-box>
+    </a-box>
+    <a-box position="19.75 2 0" width="0.5" height="4" depth="2" material="color: #6D4C41; roughness: 0.8">
       <a-box position="0 1.5 0" width="0.45" height="0.05" depth="1.9" material="color: #5D4037"></a-box>
       <a-box position="0 0.5 0" width="0.45" height="0.05" depth="1.9" material="color: #5D4037"></a-box>
       <a-box position="0 -0.5 0" width="0.45" height="0.05" depth="1.9" material="color: #5D4037"></a-box>
